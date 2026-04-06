@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Prompt Paathshala - India ka #1 AI Prompt Engineering course. Bacchon se lekar professionals tak - sab ke liye!" />
+    <meta name="keywords" content="prompt engineering, AI, ChatGPT, Claude, India, Hindi, career guidance" />
+    <meta property="og:title" content="Prompt Paathshala 🇮🇳" />
+    <meta property="og:description" content="AI Prompt Engineering seekho - bilkul free! Har profession ke liye." />
+    <title>Prompt Paathshala 🇮🇳 - AI Seekho</title>
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#6366f1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Prompt PP" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Razorpay -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/main.jsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW registered:', reg.scope))
+            .catch(err => console.log('SW error:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
