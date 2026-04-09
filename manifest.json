@@ -1,0 +1,32 @@
+{
+  "name": "Prompt Paathshala",
+  "short_name": "PromptPP",
+  "description": "India ka #1 AI Prompt Engineering course. Bacchon se lekar professionals tak - sab ke liye!",
+  "start_url": "/",
+  "scope": "/",
+  "id": "com.promptpaathshala.app",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "lang": "hi",
+  "dir": "ltr",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "https://prompt-paathshala.vercel.app/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://prompt-paathshala.vercel.app/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {"name": "Lessons", "url": "/", "description": "AI Prompt lessons dekho"}
+  ]
+}
