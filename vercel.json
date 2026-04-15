@@ -1,0 +1,17 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "headers": [
+    {
+      "source": "/manifest.json",
+      "headers": [{ "key": "Content-Type", "value": "application/json" }]
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)\\.json", "destination": "/$1.json" },
+    { "source": "/(.*)\\.png", "destination": "/$1.png" },
+    { "source": "/(.*)\\.js", "destination": "/$1.js" },
+    { "source": "/((?!manifest\\.json|sw\\.js|icon).*)", "destination": "/index.html" }
+  ]
+}
