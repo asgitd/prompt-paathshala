@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.promptpaathshala.app",
+    "sha256_cert_fingerprints": [
+      "95:62:9F:E1:52:A6:55:9A:0E:BF:6D:ED:DC:F8:9B:7D:EB:42:52:FA:29:BA:BE:F9:60:4A:D4:1B:27:39:31:B3"
+    ]
+  }
+}]
